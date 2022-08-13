@@ -26,11 +26,14 @@ body {
     padding: 15px;
     background-color: white;
     width: 100%;
-    min-height: 50vh;
+    min-height: 30vh;
     border-radius: 7px;
     box-shadow: 0px 5px 30px -25px black;
-
-    /* CONTAINER INACABADO */
+}
+.title_ctn {
+    text-transform: uppercase;
+    text-shadow: 0px 1px 5px rgb(239, 188, 255);
+    justify-content: center;
 }
 
 .btn_option {
@@ -42,16 +45,21 @@ body {
 
 .btn_option button {
     background-color: rgb(239, 188, 255);
+    color: blueviolet;
     border: none;
     outline: none;
     padding: 5px;
-    width: 50%;
-    margin: 1px;
+    width: 45%;
+    margin: 5px;
     text-transform: uppercase;
+    border-radius: 5px;
+    justify-content: center;
+    transition: 0.5s;
 }
 
 .btn_option button:hover {
     background-color: blueviolet;
+    color: white;
 }
 
 .ctn__login {
@@ -86,10 +94,24 @@ body {
 
 .btn__entrar, .btn_register {
     border: none;
+    border-left: 3px solid blueviolet;
+    border-bottom: 3px solid blueviolet;
     border-radius: 6px;
     margin: 5px;
     outline: none;
     padding: 15px;
+    transition: 0.5s;
+}
+
+.btn__entrar:hover, .btn_register:hover {
+    background-color: blueviolet;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn__entrar:active, .btn_register:active {
+    background-color: rgb(188, 188, 188);
+    border: none;
 }
 
 .ctn__register {
